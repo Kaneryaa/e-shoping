@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
+// import Background from './components/landing/background'
 
 import './App.css';
 import Navbar from './components/general/NavBar';
@@ -9,7 +10,8 @@ function App() {
     <Router>
       <div className="App">
         <Navbar />
-        <h1>Hello World</h1>
+        {/* <Router exact path="/" components={Background} /> */}
+        
       </div>
     </Router>
   );
