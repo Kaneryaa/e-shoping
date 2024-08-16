@@ -1,1 +1,0 @@
-# Kaneryaa-E-commerce-React
