@@ -265,3 +265,92 @@ img {
     width: calc(100% - 40px);
   }
 }
+
+/* Landing Page */
+
+.landing {
+  position: relative;
+  background: url("C:\Users\kaner\OneDrive\Desktop\Kaneryaa-E-commerce-React\client\public\assets\images\eshop.jpg") no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.landing-inner {
+  position: relative;
+  color: #fff;
+  max-width: 800px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.landing-inner h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.landing-inner p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Button styles */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  background-color: #1e47a5;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #15325c;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .landing {
+    height: 70vh;
+  }
+
+  .landing-inner h1 {
+    font-size: 2.5rem;
+  }
+
+  .landing-inner p {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing-inner h1 {
+    font-size: 2rem;
+  }
+
+  .landing-inner p {
+    font-size: 1rem;
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
+}
